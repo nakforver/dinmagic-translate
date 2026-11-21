@@ -68,3 +68,50 @@ video { width: 100%; border-radius: 16px; background: #000; }
 .btn.primary:hover:not(:disabled) { filter: brightness(1.15); }
 .btn.ghost { background: transparent; border: 1px solid var(--line); color: var(--text); }
 .btn.ghost:hover { border-color: var(--accent); }
+
+/* --- real pipeline additions --- */
+.field { width: 100%; display: flex; flex-direction: column; gap: 8px; text-align: left; }
+.field label { font-size: 14px; font-weight: 600; }
+.field input[type="password"],
+.field input[type="text"],
+textarea {
+  width: 100%; background: var(--bg); border: 1px solid var(--line);
+  color: var(--text); border-radius: 12px; padding: 12px 14px;
+  font-family: inherit; font-size: 14px;
+}
+.field input:focus, textarea:focus { outline: none; border-color: var(--accent); }
+.hint { font-size: 13px; }
+.ok { color: var(--accent2); font-size: 14px; }
+.bad { color: #ff6b6b; font-size: 14px; }
+
+.errbox { display: flex; gap: 10px; align-items: center; border-color: #ff6b6b; color: #ffb3b3; }
+.errbox .mini { margin-left: auto; }
+
+.logbox { width: 100%; max-height: 180px; overflow-y: auto; text-align: left;
+  background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+.logline { font-size: 13px; color: var(--muted); padding: 2px 0; }
+.logline span { color: var(--accent2); }
+
+.srtimport { width: 100%; text-align: left; margin-top: 8px; }
+.srtimport summary { cursor: pointer; color: var(--accent2); font-size: 14px; }
+.srtimport textarea { margin-top: 10px; }
+
+.videowrap { width: 100%; max-width: 640px; margin: 16px auto 0; }
+.videowrap.hidden { display: none; }
+.videowrap video { width: 100%; }
+
+.srow { border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; margin: 10px 0; text-align: left; }
+.srow-head { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.srow-head time { color: var(--accent2); font-size: 12px; min-width: 44px; }
+.gbtn { background: var(--bg); border: 1px solid var(--line); color: var(--text);
+  border-radius: 999px; padding: 4px 12px; cursor: pointer; font-size: 13px; font-family: inherit; }
+.gbtn.m { border-color: #5a8cff; }
+.gbtn.f { border-color: #ff7ad9; }
+.ttsstate { font-size: 12px; color: var(--muted); }
+.ttsstate.ok { color: var(--accent2); }
+.ttsstate.error { color: #ff6b6b; }
+.srow .orig { font-size: 13px; margin: 8px 0 4px; }
+.km-ed { margin-top: 4px; min-height: 52px; resize: vertical; }
+
+input[type="range"] { flex: 1; accent-color: var(--accent); }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
