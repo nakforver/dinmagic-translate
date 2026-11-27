@@ -1,7 +1,7 @@
 // Edge TTS (unofficial) — Khmer voice Piseth / Sreymom តាម helper
-// https://khmer-voice-1.onrender.com (Render free tier — call ដំបូងអាចយឺត ~60s ពេល server sleep)
+// https://khmer-voice.fastapicloud.dev (FastAPI Cloud Hobby free — ជំនួស Render ដែល suspended)
 
-export const EDGE_BASE = "https://khmer-voice-1.onrender.com";
+export const EDGE_BASE = "https://khmer-voice.fastapicloud.dev";
 
 export const VOICES = {
   m: "km-KH-PisethNeural", // Piseth — បុរស
