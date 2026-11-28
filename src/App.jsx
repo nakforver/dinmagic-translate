@@ -28,7 +28,7 @@ const STEPS = [
   "Done",
 ];
 
-const MODEL_PRESETS = ["gemini-2.5-flash", "gemini-3.1-pro", "gemini-3.6-flash"];
+const MODEL_PRESETS = ["gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.6-flash", "gemini-3.1-pro", "gemini-2.5-flash"];
 const LS_KEY = "dmt_gemini_key";
 const LS_MODEL = "dmt_model";
 
@@ -43,7 +43,7 @@ const loadLS = (k, d) => {
 export default function App() {
   const [step, setStep] = useState(0);
   const [apiKey, setApiKey] = useState(() => loadLS(LS_KEY, ""));
-  const [model, setModel] = useState(() => loadLS(LS_MODEL, "gemini-2.5-flash"));
+  const [model, setModel] = useState(() => loadLS(LS_MODEL, "gemini-3.8-flash"));
   const [keyState, setKeyState] = useState(null); // null | "ok" | "bad" | "checking"
   const [file, setFile] = useState(null);
   const [videoUrl, setVideoUrl] = useState(null);
